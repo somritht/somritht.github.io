@@ -1,1 +1,0 @@
-# somritht.github.io
