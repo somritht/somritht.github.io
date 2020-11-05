@@ -4,18 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="style.css" rel="stylesheet"/>
-  <title>Document</title>
+  <title>Somrith | XMAS Countdown</title>
 </head>
 <body>
   
   <!-- -->
   
   
-  <section id="hero">
+  <section id="hero" style="background:#333;">
     <div class="hero-container">
-      <h1>WeBuild</h1>
-      <h2>We're working hard to improve our website and we'll ready to launch after</h2>
-      <div class="countdown" data-count="2020/12/3" data-template="%w weeks %d days <br> %H:%M:%S">03 weeks 06 days <br> 11:12:00</div>
+      <h1>XMAS Countdown 2020</h1>
+      <h2>I hope that everyone will enjoy this remaining time left for XMAS 2020</h2>
+      <div class="countdown" data-count="2020/12/3" data-template="%w weeks %d days <br> %H:%M:%S">
+        <div id="days"></div> 
+        <br>
+       <div id="hours"></div>:
+    <div id="minutes"></div>:
+    <div id="seconds"></div>
+      </div>
 
       <form action="forms/notify.php" method="post" role="form" class="php-email-form">
         <div class="row no-gutters">
@@ -40,7 +46,7 @@
   </section>
   
   <!-- -->
-  <div id="countdown">
+  <div id="countdown" class="d-none">
     <h1>Countdown until Christmas Day.</h1>
     <div id="days"></div>
     <div id="hours"></div>
@@ -93,10 +99,10 @@ function calculateChristmasCountdown(){
     }
  
     //Add our counts to their corresponding HTML elements.
-    document.getElementById('days').innerHTML = days + ' Days';
-    document.getElementById('hours').innerHTML = hours + ' Hours';
-    document.getElementById('minutes').innerHTML = minutes + ' Minutes';
-    document.getElementById('seconds').innerHTML = seconds + ' Seconds';
+    document.getElementById('days').innerHTML = days ;
+    document.getElementById('hours').innerHTML = hours;
+    document.getElementById('minutes').innerHTML = minutes;
+    document.getElementById('seconds').innerHTML = seconds;
  
     //Recursive call after 1 second using setTimeout
     setTimeout(calculateChristmasCountdown, 1000);
