@@ -11,7 +11,7 @@
   <!-- -->
   
   
-  <section id="hero" style="background:#333;">
+  <section id="hero" style="background: url('https://static.officeholidays.com/images/935x475c/christmas.jpg');">
     <div class="hero-container">
       <h1>XMAS Countdown 2020</h1>
       <h2>I hope that everyone will enjoy this remaining time left for XMAS 2020</h2>
@@ -20,37 +20,9 @@
         <br>
         <div id="full-time"></div>
       </div>
-
-      <form action="forms/notify.php" method="post" role="form" class="php-email-form">
-        <div class="row no-gutters">
-          <div class="col-md-6 form-group pr-md-1">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-            <div class="validate"></div>
-          </div>
-          <div class="col-md-6 form-group pl-md-1">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-            <div class="validate"></div>
-          </div>
-        </div>
-
-        <div class="mb-1">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your notification request was sent. Thank you!</div>
-        </div>
-        <div class="text-center"><button type="submit">Get notified!</button></div>
-      </form>
     </div>
   </section>
   
-  <!-- -->
-  <div id="countdown" class="d-none">
-    <h1>Countdown until Christmas Day.</h1>
-    <div id="days"></div>
-    <div id="hours"></div>
-    <div id="minutes"></div>
-    <div id="seconds"></div>
-</div>
 
 <script>
 function calculateChristmasCountdown(){
@@ -97,10 +69,10 @@ function calculateChristmasCountdown(){
     }
  
     //Add our counts to their corresponding HTML elements.
-    document.getElementById('days').innerHTML = days + ' Days left' ;
-    document.getElementById('hours').innerHTML = hours;
-    document.getElementById('minutes').innerHTML = minutes;
-    document.getElementById('seconds').innerHTML = seconds;
+//     document.getElementById('days').innerHTML = days + ' Days left' ;
+//     document.getElementById('hours').innerHTML = hours;
+//     document.getElementById('minutes').innerHTML = minutes;
+//     document.getElementById('seconds').innerHTML = seconds;
   
   
    document.getElementById('full-time').innerHTML = hours + ':' + minutes + ':' + seconds;
