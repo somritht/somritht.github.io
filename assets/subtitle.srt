@@ -1,3 +1,15 @@
 1
-00:00:00,000 --> 00:00:10,000
-Sometimes the smallest step in the right direction ends up being the biggest step of your life.
+00:00:00,000 --> 00:00:05,000
+Sometimes the smallest step in the right direction
+
+2
+00:00:05,000 --> 00:00:10,000
+ends up being the biggest step of your life.
+
+3
+00:00:10,000 --> 00:00:15,000
+It’s never too late to change your path.
+
+4
+00:00:15,000 --> 00:00:20,000
+Every moment is an opportunity to grow.
